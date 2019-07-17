@@ -22,29 +22,30 @@ class CardGame
     end
   end
 
-  # Should be def instead of dif
-  # Should be comma separating card1 and card2 in the argument
+  # Should be def not dif
+  # Card1 and card2 should be seperated by a comma in the argument
   dif highest_card(card1 card2)
   if card1.value > card2.value
     return card.name
     # name is not a property of card
-    # card is not declared. Should be card1
+    # card is not previously declared. Should be card1
   else
     card2
   end
 end
-# One end too many
+# one too many ends
 end
 
-# Should be cards_total. self is not required.
+# Self is not required.
 def self.cards_total(cards)
-  # Variable total has not been assigned a value of 0
+  # Variable total should be assigned as 0
   total
   for card in cards
     total += card.value
     return "You have a total of" + total
-    # Cannot concat a string and an integer like this. Could use total.to_s or interpolation
-    # Should also come after the first end otherwise it will return after the first iteration
+    # Cannot concat a string and an integer without converting the integer to a string
+
+    # Return should be below the first end
   end
 end
 
